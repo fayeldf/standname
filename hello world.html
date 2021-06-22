@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <link rel= "stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="mystyle.css">
+  
 <h1>
     What is your stand name
 </h1>
 
-    <form>
+<form onsubmit="return false">
     <div>
         <label class="formlabel" for="fn"> first name: </label>
         <input type="text" id="fn"></input>
@@ -14,8 +15,14 @@
         <label class="formlabel" for ="ln"> last name: </label>
         <input type="text" id="ln"></input>
     </div>
-    <button> show me the stand name</button>
+    <br></br>
+    <div>
+        <div></div>
+        <button onclick="changeSN('bb')">show me the stand name</button>
+        <div></div>
+    </div>
 </form>
+<p id="stand-name"></p>
 
-<p id="stand-name">yidianziba</p>
+<script src="myscript.js"></script>
 </html>
